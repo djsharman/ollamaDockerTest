@@ -85,12 +85,13 @@ Once your Docker containers are running, you can test the endpoints to ensure ev
 By following these steps, you should be able to access Ollama from your Docker containers on your WSL2 system. If these instructions and this code helped you, please give the repo a star. I'm curious if people see it. 
 
 If you get really stuck the container has curl and ping in it so you can access the container and try things out. 
-    - use this command to find the container id
+  - use this command to find the container id
      ```sh
-    docker ps
+     docker ps
      ```
+  
+  - start a bash shell like this
 
-    - start a bash shell like this 
      ```sh
      docker exec -it <container_name_or_id> /bin/bash
      ```
