@@ -1,6 +1,6 @@
 # Getting Ollama to Work with Docker on WSL2
 
-Well, I guess you are here because you couldn't access Ollama from your Docker containers on your WSL2 system. Here is some code that should help you fix that, or at least give you some code to test it. I'm assuming you've installed Ollama on your WSL2 system already and that you can open it in your web browser on [http://localhost:11434](http://localhost:11434/).
+Well, I guess you are here because you couldn't access Ollama from your Docker containers on your WSL2 system. Here are some instructions that should help you fix that, or at least give you some code to test and find out the problem. I'm assuming you've installed Ollama on your WSL2 system already and that you can open it in your web browser on [http://localhost:11434](http://localhost:11434/).
 
 ## Step 1: Edit the Hosts File
 
