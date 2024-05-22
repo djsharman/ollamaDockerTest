@@ -21,7 +21,7 @@ First things first, let's make sure your computer can resolve the IP address cor
 3. **Add the IP Address**:
    - Add the following line at the end of the file:
      ```
-     172.31.151.220 ollama
+     172.31.151.220 wsl2host
      ```
    - Replace `172.31.151.220` with your actual WSL2 IP address. Use "ip addr" or "ifconfig" to find out this address. If you aren't sure, just paste the output from those commands into chatGTP and ask it what your ip address is!
    - Restart your WSL2 instance (wsl.exe --shutdown) to make these changes available in WSL2!
@@ -77,8 +77,8 @@ Once your Docker containers are running, you can test the endpoints to ensure ev
 
 - **`GET /test-ollama`**:
   - This endpoint tests the connection to the Ollama API.
-  - It attempts to access the API at the URL defined in `OLLAMA_API_URL` environment variable (see the docker-compose.yml file to change this!) or defaults to [http://localhost:11434](http://localhost:11434).
-  - You can access it by navigating to [http://localhost:3000/test-ollama](http://localhost:3000/test-ollama) in your browser.
+  - It attempts to access the API at the URL defined in `OLLAMA_API_URL` environment variable (see the docker-compose.yml file to change this!) or defaults to [http://wsl2host:11434](http://wsl2host:11434).
+  - You can test it it by navigating to [http://localhost:3000/test-ollama](http://localhost:3000/test-ollama) in your browser.
 
 
 
