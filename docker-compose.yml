@@ -1,0 +1,14 @@
+# docker-compose.yaml
+
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - OLLAMA_API_URL=http://wsl2host:11434
+    ports:
+      - "3000:3000"
+    network_mode: host
